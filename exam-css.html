@@ -7,6 +7,7 @@
         h3 {
             text-align: center;
         }
+
         .head div {
             border: solid 1px gray;
             width: 900px;
@@ -15,6 +16,7 @@
             margin-bottom: 20px;
             padding-bottom: 10px;
         }
+
         .content div {
             border: solid 1px gray;
             width: 900px;
@@ -24,20 +26,13 @@
             padding-bottom: 10px;
         }
 
-        .head li {
-            list-style: none;
-            display: inline-block;
-            margin-right: 10px;
+        .head input{width: 120px;}
+        .head  td{
+            width: 300px;
         }
-
-        .u1 li {
-            margin-right: 130px;
-        }
-
         table {
             width: 900px;
             border-collapse: collapse;
-
         }
 
         tr {
@@ -72,18 +67,23 @@
 <section class="head">
 
     <div>
-        <ul class="u1">
-            <li>考试科目：统一建模语言</li>
-            <li>时间：100分钟</li>
-            <li>得分：</li>
-        </ul>
+        <table>
+            <tr class="info">
+                <td>考试科目：统一建模语言</td>
+                <td>时间：100分钟</td>
+                <td>得分：</td>
+            </tr>
+        </table>
+
     </div>
     <div>
-        <ul>
-            <li>班级(必填)：<input></li>
-            <li>学号(必填)：<input></li>
-            <li>姓名(必填)：<input></li>
-        </ul>
+        <table>
+            <tr>
+                <td>班级(必填)：<input></td>
+                <td>学号(必填)：<input></td>
+                <td>姓名(必填)：<input></td>
+            </tr>
+        </table>
     </div>
 
 </section>
