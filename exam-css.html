@@ -4,69 +4,228 @@
     <meta charset="UTF-8">
     <title>examination-css ducument</title>
     <style type="text/css">
-        h4{text-align: center;}
+        h3 {
+            text-align: center;
+        }
+        .head div {
+            border: solid 1px gray;
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
+        .content div {
+            border: solid 1px gray;
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+        }
 
+        .head li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .u1 li {
+            margin-right: 130px;
+        }
+
+        table {
+            width: 900px;
+            border-collapse: collapse;
+
+        }
+
+        tr {
+            text-indent: 30px;
+            margin-top: 10px;
+        }
+
+        .top {
+            height: 40px;
+            background-color: darkgray;
+            text-indent: 2px;
+        }
+
+        input {
+            display: inline-block;
+            margin-left: 25px;
+        }
+
+        footer {
+            position: absolute;
+        }
+
+        button {
+            background-color: deepskyblue;
+            position: relative;
+            left: 550px;
+        }
     </style>
 </head>
 <body>
-<h4>统一建模语言理论测试</h4>
-<section>
-<pre>
-考试科目：统一建模语言
-时间：100分钟
-得分：
-班级(必填)：<input>
-学号(必填)：<input>
-姓名(必填)：<input>
-</pre>
-</section>
+<h3>统一建模语言理论测试</h3>
+<section class="head">
 
-<section>
-    <p>一、填空题（每空5分，共20分）</p>
-    <blockquote>
-        <p>1.UML的中文全称是：</p>
-        &nbsp;<input>
-        <p>2.对象最突出的特征是：</p>
-        &nbsp;<input>&nbsp;<input>&nbsp;<input>
-    </blockquote>
-    <p>二、选择题（每题10分，共20分）</p>
-    <blockquote>
-        <p>1.UML与软件工程的关系</p>
-        <input type="radio" name="2.1">(A)UML就是软件工程<br>
-        <input type="radio" name="2.1">(B)UML参与到软件工程中软件开发过程的几个阶段<br>
-        <input type="radio" name="2.1">(C)UML与软件工程无关<br>
-        <input type="radio" name="2.1">(D)UML是软件工程的一部分<br>
-        <p>2.Java语言支持：</p>
-        <input type="radio" name="2">(A)单继承<br>
-        <input type="radio" name="2">(B)多继承<br>
-        <input type="radio" name="2">(C)单继承和多继承都支持<br>
-        <input type="radio" name="2">(D)单继承和多继承都不支持<br>
-    </blockquote>
-    <p>三、多项选择题（每题10分，共20分）</p>
-    <blockquote>
-        <p>1.用例的粒度分为一下那几种</p>
-        <input type="checkbox" name="3.1">(A)概述级<br>
-        <input type="checkbox" name="3.1">(B)需求级<br>
-        <input type="checkbox" name="3.1">(C)用户目标级<br>
-        <input type="checkbox" name="3.1">(D)子功能级<br>
-        <p>2.类图由以下那三部分组成</p>
-        <input type="checkbox" name="3.2">(A)名称（Name）<br>
-        <input type="checkbox" name="3.2">(B)属性（Attribute）<br>
-        <input type="checkbox" name="3.2">(C)操作（Operation）<br>
-        <input type="checkbox" name="3.2">(D)方法（Function）<br>
-    </blockquote>
-    <p>四、判断题（每题10分，共20分）</p>
-    <blockquote>
-        <p>1.用例图只是用于和客户交流和沟通的，用于确定需求。<input type="radio" name="4.1"><input type="radio" name="4.1"></p>
-        2.在状态图中，终止状态在一个状态图中允许有任意多个。<input type="radio" name="4.2"><input type="radio" name="4.2">
-    </blockquote>
-    <p>五、简答题（每题20分，共20分）</p>
-    1.简述什么是模以及模型的表现形式？<textarea size="20"></textarea>
+    <div>
+        <ul class="u1">
+            <li>考试科目：统一建模语言</li>
+            <li>时间：100分钟</li>
+            <li>得分：</li>
+        </ul>
+    </div>
+    <div>
+        <ul>
+            <li>班级(必填)：<input></li>
+            <li>学号(必填)：<input></li>
+            <li>姓名(必填)：<input></li>
+        </ul>
+    </div>
+
+</section>
+<section class="content">
+    <div>
+        <table>
+            <tr class="top">
+                <td>一、填空题（每空5分，共20分）</td>
+            </tr>
+
+            <tr>
+                <td>1.UML的中文全称是：</td>
+            <tr>
+            <tr>
+                <td><input></td>
+            </tr>
+            <tr>
+                <td>2.对象最突出的特征是：</td>
+            </tr>
+            <tr>
+                <td><input><input><input></td>
+            </tr>
+        </table>
+
+    </div>
+    <div>
+        <table>
+            <tr class="top">
+                <td>二、选择题（每题10分，共20分）</td>
+            </tr>
+
+            <tr>
+                <td>1.UML与软件工程的关系</td>
+            <tr>
+            <tr>
+                <td><input type="radio" name="2.1">(A)UML就是软件工程</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="2.1">(B)UML参与到软件工程中软件开发过程的几个阶段</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="2.1">(C)UML与软件工程无关</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="2.1">(D)UML是软件工程的一部分</td>
+            </tr>
+
+
+            <tr>
+                <td>2.Java语言支持：</td>
+            <tr>
+            <tr>
+                <td><input type="radio" name="2">(A)单继承</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="2">(B)多继承</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="2">(C)单继承和多继承都支持</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="2">(D)单继承和多继承都不支持</td>
+            </tr>
+        </table>
+
+    </div>
+    <div>
+        <table>
+            <tr class="top">
+                <td>三、多项选择题（每题10分，共20分）</td>
+            </tr>
+
+            <tr>
+                <td>1.用例的粒度分为一下那几种</td>
+            <tr>
+            <tr>
+                <td><input type="checkbox" name="3.1">(A)概述级</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="3.1">(B)需求级</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="3.1">(C)用户目标级</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="3.1">(D)子功能级</td>
+            </tr>
+
+
+            <tr>
+                <td>2.类图由以下那三部分组成</td>
+            <tr>
+            <tr>
+                <td><input type="checkbox" name="3.2">(A)名称（Name）</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="3.2">(B)属性（Attribute）</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="3.2">(C)操作（Operation）</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="3.2">(D)方法（Function)</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr class="top">
+                <td>四、判断题（每题10分，共20分)</td>
+            </tr>
+            <tr>
+                <td>1.用例图只是用于和客户交流和沟通的，用于确定需求。<input type="radio" name="4.1"><img src="dui.png" height="25px"
+                                                                                  width="25px"><input type="radio"
+                                                                                                      name="4.1"><img
+                        src="cuo.png" height="25px" width="25px"></td>
+            </tr>
+            <tr>
+                <td>2.在状态图中，终止状态在一个状态图中允许有任意多个。<input type="radio" name="4.2"><img src="dui.png" height="25px"
+                                                                                   width="25px"> <input type="radio"
+                                                                                                        name="4.2"><img
+                        src="cuo.png" height="25px" width="25px"></td>
+            </tr>
+        </table>
+
+    </div>
+    <div>
+        <table>
+            <tr class="top">
+                <td>五、简答题（每题20分，共20分）</td>
+            </tr>
+            <tr>
+                <td>1.简述什么是模以及模型的表现形式？</td>
+            </tr>
+            <tr>
+                <td><textarea rows="8" cols="65"></textarea></td>
+            </tr>
+        </table>
+    </div>
 </section>
 <footer>
-    <p style="font-size: 12px">计算分数</p>
-    <hr>
+    <button>计算分数</button>
 </footer>
-
 </body>
 </html>
