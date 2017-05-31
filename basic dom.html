@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>basic DOM</title>
+</head>
+<body>
+<h4>DOM（文档对象模型）基本操作</h4>
+
+<ol id="parent">
+
+    <li id="list1" onclick = "getInfo()">点击获取HTML元素</li>
+    <li id="list2" onclick = "changeInfo()">点击改变HTML内容</li>
+    <li id="list3" style = "background-color: #00CCFF;font-size: 15px" onclick = "changeStyle()">点击改变样式</li>
+    <li id="list4" onclick = "addNode()">点击添加节点</li>
+    <li id="list5" onclick = "deletNode()">点击删除节点</li>
+</ol>
+
+<p> 对事件做出反应</p>
+<div id="block1" style="background-color: indianred;height: 100px;width: 100px;margin-top: 50px" onmouseover="mOver(this)" onmouseout="mOut(this)">我是第一块</div>
+<div id="block2" style="background-color: darkseagreen;height: 100px;width: 100px;margin-top: 50px" onmousedown="mDown(this)" onmouseup="mUp(this)">我是第二块</div>
+
+<script>
+
+
+    function getInfo() {
+        var node = document.getElementById("list1");
+        alert(node.nodeName);
+    }
+
+    function changeInfo() {
+        var element = document.getElementById("list2");
+        element.innerHTML = "这是改变之后的内容";
+    }
+
+    function changeStyle() {
+        var cNode = document.getElementById("list3");
+        cNode.style.height = "50px";
+    }
+
+    function addNode(){
+        var fNode = document.getElementById("parent");
+        var newNode = document.createElement("li");
+        var text = document.createTextNode("这是新的");
+
+        newNode.appendChild(text);
+        fNode.appendChild(newNode);
+    }
+
+    function deletNode() {
+        var fNode = document.getElementById("parent");
+        var child = document.getElementById("list5");
+
+        fNode.removeChild(child);
+    }
+
+    function mOver(obj){
+        obj.innerHTML = "鼠标移上来的时候是这样的嘿嘿嘿";
+    }
+    function mOut(obj) {
+        obj.innerHTML = "我是第一块";
+    }
+
+    function mDown(obj) {
+        obj.innerHTML = "鼠标按下我是这样的嘿嘿嘿";
+    }
+    function mUp(obj) {
+        obj.innerHTML = "我是第二块";
+    }
+</script>
+</body>
+</html>
