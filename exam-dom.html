@@ -21,326 +21,155 @@
             crossorigin="anonymous"></script>
 
     <style type="text/css">
-        .block {
-            width: 900px;
-            padding-bottom: 10px;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 20px;
-            border: 1px solid grey;
-        }
-
-        .block.head {
-            padding-top: 10px;
-        }
-
-        .block.head td {
-            width: 300px;
-        }
-
-        table {
-            width: 900px;
-        }
-
-        table tr td {
-            text-indent: 10px;
-        }
-
-        .top {
-            height: 40px;
-            background-color: darkgray;
-            text-indent: 2px;
-        }
-
-        .glyphicon-ok {
-            color: blue;
-        }
-
-        .glyphicon-remove {
-            color: red;
-        }
-
-        .form-control {
-            width: 700px;
-            margin-left: 10px;
-        }
-
-        footer {
-            position: absolute;
-        }
-
-        button {
-            margin-top: 20px;
-            background-color: deepskyblue;
-            position: relative;
-            left: 550px;
-        }
+      body{padding: 50px;}
     </style>
+    <script type="text/javascript" src="examjs.js"></script>
 </head>
 <body>
-
 <h3 class="text-center">统一建模语言理论测试</h3>
 
-<div class="block head">
-    <table>
-        <tr>
-            <td>考试科目：统一建模语言</td>
-            <td>时间：100分钟</td>
-            <td id="totalGrade">得分：</td>
-        </tr>
-    </table>
 
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+
+            <div class="col-md-4">考试科目：统一建模语言</div>
+            <div class="col-md-4">时间：100分钟</div>
+            <div id="totalGrade" class="col-md-4">得分：</div>
+        </div>
+    </div>
 </div>
-<div class="block head">
-    <table>
-        <tr>
-            <td>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-4">
                 <form class="form-inline">
-                    <lable>班级(必填)：<input id="classNum" type="text" class="form-control"></lable>
+                    <lable>班级(必填)：<input  id="classNum" type="text" class="form-control"></lable>
                 </form>
-            </td>
-            <td>
+            </div>
+            <div class="col-md-4">
                 <form class="form-inline">
                     <lable>学号(必填)：<input id="scNum" type="text" class="form-control"></lable>
                 </form>
-            </td>
-            <td>
+            </div>
+            <div class="col-md-4">
                 <form class="form-inline">
                     <lable>姓名(必填)：<input id="stName" type="text" class="form-control"></lable>
                 </form>
-            </td>
-        </tr>
-    </table>
-</div>
-
-<div class="block">
-    <table>
-        <tr class="top">
-            <td>一、填空题（每空5分，共20分）</td>
-        </tr>
-
-        <tr>
-            <td>1.UML的中文全称是：</td>
-        <tr>
-        <tr>
-            <td>
-                <form class="form-inline">
-                    <lable><input id="answer1" type="text" class="form-control"></lable>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <td>2.对象最突出的特征是：</td>
-        </tr>
-        <tr>
-            <td>
-                <form class="form-inline">
-                    <lable><input id="answer2" type="text" class="form-control"></lable>
-                    <lable><input id="answer3" type="text" class="form-control"></lable>
-                    <lable><input id="answer4" type="text" class="form-control"></lable>
-                </form>
-
-            </td>
-        </tr>
-    </table>
+            </div>
+        </div>
+    </div>
 
 </div>
 
-<div class="block">
-    <table>
-        <tr class="top">
-            <td>二、选择题（每题10分，共20分）</td>
-        </tr>
 
-        <tr>
-            <td>1.UML与软件工程的关系</td>
-        <tr>
-        <tr>
-            <td><label><input type="radio" name="optionsRadios-1"></label>(A)UML就是软件工程</td>
-        </tr>
-        <tr>
-            <td><label><input id="answer5" type="radio" name="optionsRadios-1"></label>(B)UML参与到软件工程中软件开发过程的几个阶段</td>
-        </tr>
-        <tr>
-            <td><label><input type="radio" name="optionsRadios-1"></label>(C)UML与软件工程无关</td>
-        </tr>
-        <tr>
-            <td><label><input type="radio" name="optionsRadios-1"></label>(D)UML是软件工程的一部分</td>
-        </tr>
+<div class="panel panel-default">
 
+    <div class="panel-heading">一、填空题（每空5分，共20分）</div>
+    <div class="panel-body">
+        <div>1.UML的中文全称是：</div>
 
-        <tr>
-            <td>2.Java语言支持：</td>
-        <tr>
-        <tr>
-            <td><label><input id="answer6" type="radio" name="optionsRadios"></label>(A)单继承</td>
-        </tr>
-        <tr>
-            <td><label><input type="radio" name="optionsRadios"></label>(B)多继承</td>
-        </tr>
-        <tr>
-            <td><label><input type="radio" name="optionsRadios"></label>(C)单继承和多继承都支持</td>
-        </tr>
-        <tr>
-            <td><label><input type="radio" name="optionsRadios"></label>(D)单继承和多继承都不支持</td>
-        </tr>
-    </table>
+        <div>
+            <form class="form-inline">
+                <lable><input id="answer1" type="text" class="form-control"></lable>
+            </form>
+        </div>
+
+        <div>2.对象最突出的特征是：</div>
+
+        <div>
+            <form class="form-inline">
+                <lable><input id="answer2" type="text" class="form-control"></lable>
+                <lable><input id="answer3" type="text" class="form-control"></lable>
+                <lable><input  id="answer4" type="text" class="form-control"></lable>
+            </form>
+
+        </div>
+    </div>
 
 </div>
-<div class="block">
-    <table>
-        <tr class="top">
-            <td>三、多项选择题（每题10分，共20分）</td>
-        </tr>
+<div class="panel panel-default">
 
-        <tr>
-            <td>1.用例的粒度分为一下那几种</td>
-        <tr>
-        <tr>
-            <td><label><input id="answer7" type="checkbox" name="3.1"></label>(A)概述级</td>
-        </tr>
-        <tr>
-            <td><label><input type="checkbox" name="3.1"></label>(B)需求级</td>
-        </tr>
-        <tr>
-            <td><label><input id="answer8" type="checkbox" name="3.1"></label>(C)用户目标级</td>
-        </tr>
-        <tr>
-            <td><label><input id="answer9" type="checkbox" name="3.1"></label>(D)子功能级</td>
-        </tr>
+    <div class="panel-heading">二、选择题（每题10分，共20分）</div>
+
+    <div class="panel-body">
+        <div>1.UML与软件工程的关系</div>
+
+        <div><label><input type="radio" name="optionsRadios-1"></label>(A)UML就是软件工程</div>
 
 
-        <tr>
-            <td>2.类图由以下那三部分组成</td>
-        <tr>
-        <tr>
-            <td><label><input id="answer10" type="checkbox" name="3.2"></label>(A)名称（Name）</td>
-        </tr>
-        <tr>
-            <td><label><input id="answer11" type="checkbox" name="3.2"></label>(B)属性（Attribute）</td>
-        </tr>
-        <tr>
-            <td><label><input id="answer12" type="checkbox" name="3.2"></label>(C)操作（Operation）</td>
-        </tr>
-        <tr>
-            <td><label><input type="checkbox" name="3.2"></label>(D)方法（Function)</td>
-        </tr>
-    </table>
+        <div><label><input  id="answer5" type="radio" name="optionsRadios-1"></label>(B)UML参与到软件工程中软件开发过程的几个阶段</div>
+
+        <div><label><input type="radio" name="optionsRadios-1"></label>(C)UML与软件工程无关</div>
+        <div><label><input type="radio" name="optionsRadios-1"></label>(D)UML是软件工程的一部分</div>
+
+        <div>2.Java语言支持：</div>
+
+        <div><label><input  id="answer6" type="radio" name="optionsRadios"></label>(A)单继承</div>
+
+        <div><label><input type="radio" name="optionsRadios"></label>(B)多继承</div>
+
+        <dix><label><input type="radio" name="optionsRadios"></label>(C)单继承和多继承都支持</dix>
+
+        <div><label><input type="radio" name="optionsRadios"></label>(D)单继承和多继承都不支持</div>
+
+    </div>
 </div>
-<div class="block">
-    <table>
-        <tr class="top">
-            <td>四、判断题（每题10分，共20分)</td>
-        </tr>
-        <tr>
-            <td>1.用例图只是用于和客户交流和沟通的，用于确定需求。<input type="radio" name="4.1"><span class="glyphicon glyphicon-ok"></span>
-                <input id="answer13" type="radio" name="4.1"><span class="glyphicon glyphicon-remove"></span></td>
-        </tr>
-        <tr>
-            <td>2.在状态图中，终止状态在一个状态图中允许有任意多个。<input id="answer14" type="radio" name="4.2"> <span
-                    class="glyphicon glyphicon-ok"></span> <input type="radio" name="4.2"> <span
-                    class="glyphicon glyphicon-remove"></td>
-        </tr>
-    </table>
+<div class="panel panel-default">
+
+
+    <div class="panel-heading">三、多项选择题（每题10分，共20分）</div>
+    <div class="panel-body">
+
+        <div>1.用例的粒度分为一下那几种</div>
+
+        <div><label><input id="answer7"  type="checkbox" name="3.1"></label>(A)概述级</div>
+
+        <div><label><input type="checkbox" name="3.1"></label>(B)需求级</div>
+
+        <div><label><input id="answer8"  type="checkbox" name="3.1"></label>(C)用户目标级</div>
+
+        <div><label><input id="answer9"  type="checkbox" name="3.1"></label>(D)子功能级</div>
+
+        <div>2.类图由以下那三部分组成</div>
+
+        <div><label><input id="answer10"  type="checkbox" name="3.2"></label>(A)名称（Name）</div>
+
+        <div><label><input id="answer11"  type="checkbox" name="3.2"></label>(B)属性（Attribute）</div>
+
+        <div><label><input id="answer12"  type="checkbox" name="3.2"></label>(C)操作（Operation）</div>
+
+        <div><label><input type="checkbox" name="3.2"></label>(D)方法（Function)</div>
+    </div>
 
 </div>
-<div class="block">
-    <table>
-        <tr class="top">
-            <td>五、简答题（每题20分，共20分）</td>
-        </tr>
-        <tr>
-            <td>1.简述什么是模以及模型的表现形式？</td>
-        </tr>
-        <tr>
-            <td><textarea id="answer15" class="form-control" rows="3"></textarea></td>
-        </tr>
-    </table>
+<div class="panel panel-default">
+
+
+    <div class="panel-heading">四、判断题（每题10分，共20分)</div>
+    <div class="panel-body">
+        <div>1.用例图只是用于和客户交流和沟通的，用于确定需求。<input type="radio" name="4.1"><span class="glyphicon glyphicon-ok"></span>
+            <input id="answer13" type="radio" name="4.1"><span class="glyphicon glyphicon-remove"></span></div>
+
+        <div>2.在状态图中，终止状态在一个状态图中允许有任意多个。<input id="answer14" type="radio" name="4.2"> <span
+                class="glyphicon glyphicon-ok"></span> <input type="radio" name="4.2"> <span
+                class="glyphicon glyphicon-remove"></div>
+    </div>
+
+</div>
+<div class="panel panel-default">
+
+
+    <div class="panel-heading">五、简答题（每题20分，共20分）</div>
+    <div class="panel-body">
+        <div>1.简述什么是模以及模型的表现形式？</div>
+
+        <diiv><textarea id="answer15" class="form-control" rows="3"></textarea></diiv>
+    </div>
 </div>
 
-<footer>
-    <button class="btn btn-primary" onclick="checkInfo()">计算分数</button>
-</footer>
-
-<script>
-    function checkInfo() {
-        var classNum = document.getElementById("classNum");
-        var scNum = document.getElementById("scNum");
-        var stName = document.getElementById("stName");
+<button class="btn btn-primary center-block" onclick="checkInfo()">计算分数</button>
 
 
-        if (classNum.value === "" || scNum.value === "" || stName.value === "") {
-            classNum.style.borderColor = "red";
-            scNum.style.borderColor = "red";
-            stName.style.borderColor = "red";
-            alert("请检查并填写必要信息！");
-
-        }
-        else {
-            var grade = 0;
-            var answer1 = document.getElementById("answer1"),
-                answer2 = document.getElementById("answer2"),
-                answer3 = document.getElementById("answer3"),
-                answer4 = document.getElementById("answer4"),
-                answer5 = document.getElementById("answer5"),
-                answer6 = document.getElementById("answer6"),
-                answer7 = document.getElementById("answer7"),
-                answer8 = document.getElementById("answer8"),
-                answer9 = document.getElementById("answer9"),
-                answer10 = document.getElementById("answer10"),
-                answer11 = document.getElementById("answer11"),
-                answer12 = document.getElementById("answer12"),
-                answer13 = document.getElementById("answer13"),
-                answer14 = document.getElementById("answer14"),
-                answer15 = document.getElementById("answer15");
-
-
-            if
-            (answer1.value == "统一建模语言") {
-                grade += 5;
-            }
-
-            if (answer2.value == "封装性") {
-                grade += 5;
-            }
-            if (answer3.value == "继承性") {
-                grade += 5;
-            }
-            if (answer4.value == "多态性") {
-                grade += 5;
-            }
-
-            if (answer5.checked) {
-                grade += 10;
-            }
-            if (answer6.checked) {
-                grade += 10;
-            }
-
-            if (answer7.checked && answer8.checked && answer9.checked) {
-                grade += 10;
-            }
-            if (answer10.checked && answer11.checked && answer12.checked) {
-                grade += 10;
-            }
-
-            if (answer13.checked) {
-                grade += 10;
-            }
-            if (answer14.checked) {
-                grade += 10;
-            }
-
-            if (answer15.value == "模型是对现实世界的简化和抽象，模型是对所研究的系统、过程、事物或概念的一种表达式。可以是物理实体；可以是某种图形；或者是一种数学表达式。") {
-                grade += 20;
-            }
-
-            var total = document.getElementById("totalGrade");
-            total.innerHTML = "得分：" + grade;
-
-        }
-
-    }
-</script>
 </body>
 </html>
